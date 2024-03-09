@@ -1,4 +1,4 @@
-let frontendHost = import.meta.env.REACT_APP_FRONTEND_HOST
-let backendHost = import.meta.env.REACT_APP_BACKEND_HOST
+let frontendHost = import.meta.env.VITE_SOME_FRONTEND_HOST
+let backendHost = import.meta.env.VITE_SOME_BACKEND_HOST
 
 export {frontendHost, backendHost}

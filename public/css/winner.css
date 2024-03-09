@@ -1,0 +1,13 @@
+.winnerMainTextSmall{
+    color: #fff;
+    font-size: 2rem;
+    line-height: 2.8rem;
+}
+
+.contentInfoDivWin{
+    display: grid;
+    margin: auto auto;
+    position: absolute;
+    left: auto;
+    width: 100vw;
+}

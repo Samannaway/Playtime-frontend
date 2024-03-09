@@ -1,0 +1,102 @@
+.mainText-Dashboard{
+    position: absolute;
+    left: 35vw;
+}
+
+.Dashboard-options{
+    position: absolute;
+    top: 16rem;
+    display: flex;
+    width: 100vw;
+    height: auto;
+    gap: 10rem;
+    height: auto;
+    align-items: center;
+}
+
+
+.inviteDiv{
+    margin-left: 25rem;
+    text-align: center;
+}
+
+.dashboardDiv1{
+    background-color: #fff;
+    padding: 2rem;
+    height: 35vh;
+    border-radius: 1rem;
+    width: 14vw;
+    font-family: "Hachi Maru Pop", cursive;
+}
+
+.dashboardDiv1Text{
+    font-size: 1.3rem;
+}
+
+.dashboardDiv1Input{
+    background-color: #FFD336;
+    border: none;
+    outline: none;
+    color: #292929;
+    width: 12vw;
+    height: 2rem;
+    padding: 0.2rem 0.9rem;
+    margin-top: 0.8rem;
+    font-family: "Hachi Maru Pop", cursive;
+    border-radius: 2rem;
+}
+
+.cardFooter{
+    display: flex;
+    flex-direction: column;
+    line-height: 0.9rem;
+    margin-top: 6rem;
+}
+
+.bashboardDiv1Button{
+    display: grid;
+    width: 6rem;
+    height: 2.5rem;
+    background-color: #292929;
+    outline: none;
+    border: none;
+    color: #fff;
+    margin: 1rem auto 0rem auto;
+    align-items: center;
+    font-family: "Hachi Maru Pop", cursive;
+    border-radius: 1.5rem;
+}
+
+
+.bashboardDiv1Button:hover{
+    background-color: #000000;
+    cursor: pointer;
+}
+
+
+.requestType1{
+    display: flex;
+    background-color: #8C46FF;
+    max-width: 13rem;
+    height: 2.5rem;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: 2rem;
+    margin: 1rem 0rem;
+}
+
+.inviteAccept{
+    width: 4.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-content: center;
+    font-size: 0.8rem;
+    margin: 0rem;
+    margin-left: auto;
+}
+
+.inviteName{
+    color: #fff;
+    margin-left: 1.2rem;
+    font-size: 0.95rem;
+}

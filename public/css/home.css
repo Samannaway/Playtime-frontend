@@ -279,4 +279,9 @@ a{
     .yellowDiv{
         height: 37vh;
     }
+
+    .requests{
+        min-height: 24rem!important;
+        max-height: 24rem!important;
+    }
 }

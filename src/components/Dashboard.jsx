@@ -17,6 +17,7 @@ const Dashboard = (props)=>{
     const [requestReciever, setRequestReciever] = useState()
     const [jobInitial, setJobInitial] = useState(false)
     const [gameFlag, setGameFlag] = useState(false)
+    const [delOptToggle, setDelOptToggle] = useState(false)
 
     const [senderName, setSenderName] = useState()
     const [senderGoogleId, setSenderGoogleId] = useState()
@@ -91,6 +92,21 @@ const Dashboard = (props)=>{
     }
 
 
+    function deleteRequest(deleteId) {
+        axios.post(`${backendHost}/deleteRequest`, 
+            {
+                deleteId: deleteId, 
+                playerId: userId
+            }).then(res=>{
+                console.log(res)
+                if (res.data === "executed delete") {
+                    let NewReq = requests.filter(elem => elem.googleId != deleteId) 
+                    setRequests(NewReq)
+                }
+            })
+            .catch(err => console.log(err))
+    }
+
     
     return(
         gameFlag === true ? <Game 
@@ -129,7 +145,15 @@ const Dashboard = (props)=>{
 
 
                 <div className="dashboardDiv1 requestDiv">
-                    <p className="dashboardDiv1Text ">Join requests</p>
+                    <span className="flex">
+                        <button 
+                            className="deleteOptionShow"
+                            onClick={()=>setDelOptToggle(toggle => !toggle)}
+                        >
+                            <ion-icon name="ellipsis-vertical-sharp"></ion-icon>
+                        </button>
+                        <p className="dashboardDiv1Text ">Join requests</p>
+                    </span>
                     <div className="requests">
                         
                         {
@@ -140,6 +164,8 @@ const Dashboard = (props)=>{
                                     senderGoogleId={elem.googleId} 
                                     selfGoogleId={userId}
                                     selfName={userName}
+                                    delOptToggle={delOptToggle}
+                                    deleteRequest={deleteRequest}
                                 />)
                             })
                         }

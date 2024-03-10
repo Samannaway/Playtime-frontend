@@ -100,3 +100,75 @@
     margin-left: 1.2rem;
     font-size: 0.95rem;
 }
+
+.requests{
+    overflow-y: scroll;
+    min-height: 14rem;
+    max-height: 14rem;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #9f9f9f;
+    border-radius: 10px;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #484848;
+  }
+
+  .dashboardDiv1Text{
+    position: sticky;
+  }
+
+.hidden{
+    display: none!important;
+}
+.deleteButton{
+    color: #fff!important;
+    background-color: #ff4444!important;
+    font-size: 1rem;
+    width: 4rem;
+}
+
+.deleteButton:hover{
+    cursor: pointer;
+    background-color: #e43e3e!important;
+}
+
+.flex{
+    align-items: center;
+    display: flex;
+    width: fit-content;
+    gap: 0.5rem;
+}
+
+.deleteOptionShow{
+    background-color: #ffffff00;
+    border: none;
+    outline: none;
+    width: 0.5rem;
+    height: 0.5rem;
+    font-size: 1.1rem;
+    color: #3e3e3e;
+}
+
+.deleteOptionShow:hover{
+    cursor: pointer;
+    color: #000000;
+}
